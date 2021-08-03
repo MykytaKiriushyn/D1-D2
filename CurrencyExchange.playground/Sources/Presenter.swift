@@ -1,13 +1,13 @@
 protocol CurrencyPresenter {
     
-    var currency: [CurrencyValue] { get }
+    var currency: CurrencyValue
     func exchangeCurrency()
     func getCurrency()
 }
 
 final class CurrencyPresenterImp {
     
-    var currency: [CurrencyValue] = []
+    var currency: CurrencyValue
     
     private weak var view: CurrencyView?
     
