@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choice Of Tea-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChoiceOfTea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ChoiceOfTea" customModule="UIKitTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FB-ep-ocA">
+                                <rect key="frame" x="10" y="54" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvE-fg-pNC">
+                                <rect key="frame" x="10" y="95" width="51" height="31"/>
+                                <connections>
+                                    <action selector="blackToggleAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="sjG-Zm-r20"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F61-uB-cTA">
+                                <rect key="frame" x="10" y="146" width="51" height="31"/>
+                                <connections>
+                                    <action selector="greenToggleAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="fmf-pN-hqE"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oW-Qv-IDu">
+                                <rect key="frame" x="10" y="197" width="51" height="31"/>
+                                <connections>
+                                    <action selector="herbalToggleAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="5o3-TP-UeK"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-Fn-SE2">
+                                <rect key="frame" x="10" y="248" width="51" height="31"/>
+                                <connections>
+                                    <action selector="otherToggleAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="t4F-fI-ywG"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xl-Il-h34">
+                                <rect key="frame" x="79" y="100" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q83-G0-e8G">
+                                <rect key="frame" x="79" y="151" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7m-Il-1W9">
+                                <rect key="frame" x="79" y="202" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRo-x9-HYR">
+                                <rect key="frame" x="79" y="253" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euK-Ls-zDz">
+                                <rect key="frame" x="178.5" y="304" width="57" height="30"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="proceed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="02k-yd-3iz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6xl-Il-h34" firstAttribute="top" secondItem="5FB-ep-ocA" secondAttribute="bottom" constant="25" id="0dB-ly-3vZ"/>
+                            <constraint firstItem="5FB-ep-ocA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="2XR-pF-lZO"/>
+                            <constraint firstItem="Q83-G0-e8G" firstAttribute="top" secondItem="6xl-Il-h34" secondAttribute="bottom" constant="30" id="5MI-Fa-Vw1"/>
+                            <constraint firstItem="g7m-Il-1W9" firstAttribute="top" secondItem="Q83-G0-e8G" secondAttribute="bottom" constant="30" id="6vS-1l-oDV"/>
+                            <constraint firstItem="g7m-Il-1W9" firstAttribute="leading" secondItem="5oW-Qv-IDu" secondAttribute="trailing" constant="20" id="CkN-1W-n0H"/>
+                            <constraint firstItem="5oW-Qv-IDu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="FXF-Kh-wgM"/>
+                            <constraint firstItem="2ha-Fn-SE2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="Hwq-m2-Pty"/>
+                            <constraint firstItem="euK-Ls-zDz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MrY-8s-PDy"/>
+                            <constraint firstItem="5FB-ep-ocA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="PKy-pH-Zzq"/>
+                            <constraint firstItem="2ha-Fn-SE2" firstAttribute="top" secondItem="5oW-Qv-IDu" secondAttribute="bottom" constant="20" id="ScW-va-g8B"/>
+                            <constraint firstItem="IRo-x9-HYR" firstAttribute="top" secondItem="g7m-Il-1W9" secondAttribute="bottom" constant="30" id="SsC-S7-liU"/>
+                            <constraint firstItem="IRo-x9-HYR" firstAttribute="leading" secondItem="2ha-Fn-SE2" secondAttribute="trailing" constant="20" id="Z5f-Vc-0bt"/>
+                            <constraint firstItem="wvE-fg-pNC" firstAttribute="top" secondItem="5FB-ep-ocA" secondAttribute="bottom" constant="20" id="dFM-IS-n2r"/>
+                            <constraint firstItem="5oW-Qv-IDu" firstAttribute="top" secondItem="F61-uB-cTA" secondAttribute="bottom" constant="20" id="iRP-Zj-K81"/>
+                            <constraint firstItem="euK-Ls-zDz" firstAttribute="top" secondItem="IRo-x9-HYR" secondAttribute="bottom" constant="30" id="jgP-eF-Yg7"/>
+                            <constraint firstItem="F61-uB-cTA" firstAttribute="top" secondItem="wvE-fg-pNC" secondAttribute="bottom" constant="20" id="k1w-vl-MF4"/>
+                            <constraint firstItem="wvE-fg-pNC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="klu-gh-uaC"/>
+                            <constraint firstItem="6xl-Il-h34" firstAttribute="leading" secondItem="wvE-fg-pNC" secondAttribute="trailing" constant="20" id="lCI-gh-GMA"/>
+                            <constraint firstItem="F61-uB-cTA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="uE4-1D-lrR"/>
+                            <constraint firstItem="Q83-G0-e8G" firstAttribute="leading" secondItem="F61-uB-cTA" secondAttribute="trailing" constant="20" id="uSs-hJ-Rda"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5FB-ep-ocA" secondAttribute="trailing" constant="10" id="wmu-ku-3YS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blackLabel" destination="6xl-Il-h34" id="ycG-tY-xov"/>
+                        <outlet property="blackToggle" destination="wvE-fg-pNC" id="Htv-ZN-Xw3"/>
+                        <outlet property="chooseTeaLabel" destination="5FB-ep-ocA" id="geG-E6-fvq"/>
+                        <outlet property="greenLabel" destination="Q83-G0-e8G" id="mP7-0b-idF"/>
+                        <outlet property="greenToggle" destination="F61-uB-cTA" id="mjV-Pu-D0O"/>
+                        <outlet property="herbalLabel" destination="g7m-Il-1W9" id="whf-PO-ft9"/>
+                        <outlet property="herbalToggle" destination="5oW-Qv-IDu" id="4gn-m4-j1X"/>
+                        <outlet property="otherLabel" destination="IRo-x9-HYR" id="T6C-ha-z1t"/>
+                        <outlet property="otherToggle" destination="2ha-Fn-SE2" id="JqM-Pd-Zbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
