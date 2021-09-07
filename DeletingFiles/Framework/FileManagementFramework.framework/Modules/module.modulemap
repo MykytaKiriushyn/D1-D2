@@ -1,0 +1,11 @@
+framework module FileManagementFramework {
+  umbrella header "FileManagementFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module FileManagementFramework.Swift {
+    header "FileManagementFramework-Swift.h"
+    requires objc
+}
